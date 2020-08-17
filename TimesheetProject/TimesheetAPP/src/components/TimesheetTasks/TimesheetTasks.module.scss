@@ -1,0 +1,121 @@
+.Tasks {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.TasksHeader {
+    padding-top: 40px;
+    width:100%;
+    background-image:url("../../assets/header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 40px;
+
+    .PlusButton {
+        background: none;
+        border: none;
+        img{display: block;}
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .Quote {
+        margin: 45px 0 45px auto;
+        max-width: 520px;
+        text-align: right;
+
+        .QuoteContent{
+            font-size: 45px;
+            font-weight: 300;
+        }
+
+        .Author{
+            font-size: 30px;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+.HeaderBottom {
+    background-color: rgba(211, 67, 27, 0.5);
+}
+
+.HeaderDatePicker {
+    position: relative;
+
+    .CalendarIcon {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 1px;
+        left: 0;
+
+        img { 
+            display: block; 
+        }
+    }
+
+    :global{
+        .react-datepicker__input-container{
+            input {
+                background: none;
+                color: white;
+                border: none;
+                font-size: 23px;
+                width: 190px;
+                padding-left: 65px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.HeaderBottomInner {
+    padding: 35px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .vegaLogo {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        opacity: 0.1;
+    }
+}
+
+.TasksBody {
+    flex: 1;
+}
+
+.TasksHoursSum {
+    font-size: 12px;
+    padding: 20px;
+    text-align: right;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.TasksEmptyState {
+    text-align: center;
+}
+
+.TasksInvalidDate {
+    margin-top: 20px;
+}
+
+.TasksFooter {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+}
